@@ -2,6 +2,7 @@ package lzc.com.lightactionbarmaster;
 
 
 import android.app.Activity;
+import android.app.job.JobInfo;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.graphics.Color;
@@ -17,6 +18,7 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
+import android.widget.TableRow;
 import android.widget.TextView;
 
 import com.githang.statusbar.StatusBarCompat;
@@ -39,8 +41,8 @@ public class LightActionBar {
     public static final int IMG_BACK_APPS = R.drawable.ic_action_apps;
     public static final int IMG_BACK_SETTINGS = R.drawable.ic_action_settings;
     public static final int IMG_BACK_EXIT = R.drawable.ic_action_exit;
-    public static final boolean LIGHT_BAR_TEXT = true;
-    public static final boolean DARK_BAR_TEXT = false;
+    public static final boolean COLOR_BAR_TEXT_WHITE = false;
+    public static final boolean COLOR_BAR_TEXT_DARK = true;
 
 
 
@@ -75,7 +77,7 @@ public class LightActionBar {
      */
     public LightActionBar setBarColor(int color,boolean barTextColor){
         this.barColor = color;
-        StatusBarCompat.setStatusBarColor((Activity) context,color,true);
+        StatusBarCompat.setStatusBarColor((Activity) context,color,barTextColor);
         return this;
     }
     /**

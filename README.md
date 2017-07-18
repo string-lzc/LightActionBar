@@ -18,7 +18,7 @@ Add it in your root build.gradle at the end of repositories:
 Step 2. Add the dependency
 ```gradle
 	dependencies {
-		compile 'com.github.User:Repo:Tag'
+		compile 'com.github.string-lzc:LightActionBar:v1.0.1'
 	}
 ```
 That's it! 

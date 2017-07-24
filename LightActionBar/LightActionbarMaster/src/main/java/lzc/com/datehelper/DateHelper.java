@@ -17,7 +17,7 @@ public class DateHelper {
         sdf = new SimpleDateFormat(formate);
         return sdf.format(date);
     }
-    public String formateDate(){
+    public static String formateDate(){
         date = new Date();
         sdf = new SimpleDateFormat("yyyy-MM-dd");
         return sdf.format(date);
